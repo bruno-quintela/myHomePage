@@ -1,0 +1,58 @@
+/*Util macros*/
+$borderBlack: 1px solid #000;
+
+/************************** LAYOUT ************************************/
+
+/*MAIN WRAPPER*/
+$wrapperWidth:100%;
+
+/*GENERIC CONTAINER*/
+$containerWidth: 90%;
+$containerHeight: 100%;
+$containerMinWidth: 800px;
+
+/*HEADER WRAPPER*/
+$headerHeight: 100px;
+$logoWidth: 200px;
+$navWidth: 600px;
+
+
+.mainWrapper {
+    width: $wrapperWidth;
+    border: $borderBlack;
+    
+    .headerWrapper
+    {
+        height: $headerHeight;
+        border: $borderBlack;
+        text-align: center;
+        
+        .headerContainer
+        {
+            margin: auto;
+            width: $containerWidth;
+            min-width: $containerMinWidth;
+            height: $headerHeight;
+            border: $borderBlack;
+            
+            .logo
+            {
+                width: $logoWidth;
+                height: $headerHeight;
+                float: left;
+                border: $borderBlack;
+            }
+            
+            .navMenu
+            {
+                width: $navWidth;
+                height: $headerHeight;
+                float: right;
+                border: $borderBlack;
+            }
+        }
+    }
+}
+
+@import 'navMenu'
+

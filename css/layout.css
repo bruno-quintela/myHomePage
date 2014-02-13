@@ -1,0 +1,46 @@
+/*Util macros*/
+/************************** LAYOUT ************************************/
+/*MAIN WRAPPER*/
+/*GENERIC CONTAINER*/
+/*HEADER WRAPPER*/
+.mainWrapper {
+  width: 100%;
+  border: 1px solid black; }
+  .mainWrapper .headerWrapper {
+    height: 100px;
+    border: 1px solid black;
+    text-align: center; }
+    .mainWrapper .headerWrapper .headerContainer {
+      margin: auto;
+      width: 90%;
+      min-width: 800px;
+      height: 100px;
+      border: 1px solid black; }
+      .mainWrapper .headerWrapper .headerContainer .logo {
+        width: 200px;
+        height: 100px;
+        float: left;
+        border: 1px solid black; }
+      .mainWrapper .headerWrapper .headerContainer .navMenu {
+        width: 600px;
+        height: 100px;
+        float: right;
+        border: 1px solid black; }
+
+/** NAV MENU  **/
+/*li width*/
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+nav li {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  vertical-align: baseline;
+  text-align: center;
+  border: 1px solid black; }
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none; }

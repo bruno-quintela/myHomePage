@@ -1,0 +1,28 @@
+/** NAV MENU  **/
+
+/*li width*/
+$liHeight: 100px;
+$liWidth: 100px;
+
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li { 
+      display: inline-block;
+      width: $liWidth;
+      height: $liHeight;
+      vertical-align: baseline; 
+      text-align: center; 
+      border: $borderBlack; 
+  }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}

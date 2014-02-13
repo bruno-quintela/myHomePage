@@ -3,9 +3,9 @@ $(document).ready(function () {
 });
 
 function initUI() {
-    setElemScreenHeight('section1');
+    setElemScreenHeight('.mainWrapper');
 }
 
-function setElemScreenHeight(elemId) {
-    $('#' + elemId).css('height', $(document).height());
+function setElemScreenHeight(elemRef) {
+    $(elemRef).css('height', $(document).height());
 }
