@@ -5,6 +5,7 @@ $borderBlack: 1px solid #000;
 
 /*MAIN WRAPPER*/
 $wrapperWidth:100%;
+$wrapperHeight:1000px;
 
 /*GENERIC CONTAINER*/
 $containerWidth: 90%;
@@ -13,19 +14,32 @@ $containerMinWidth: 800px;
 
 /*HEADER WRAPPER*/
 $headerHeight: 100px;
+
+$contactWidth: 100%;
+$contactHeight: 20px;
+
 $logoWidth: 200px;
 $navWidth: 600px;
+
+$subMenuWidth: 100%;
+$subMenuHeight: 20px;
 
 
 .mainWrapper {
     width: $wrapperWidth;
+    height: $wrapperHeight;
     border: $borderBlack;
-    
-    .headerWrapper
+}
+
+.headerWrapper
     {
+        width: $wrapperWidth;
         height: $headerHeight;
         border: $borderBlack;
         text-align: center;
+        position: fixed;
+        top:0px;
+        left:0px;
         
         .headerContainer
         {
@@ -34,6 +48,14 @@ $navWidth: 600px;
             min-width: $containerMinWidth;
             height: $headerHeight;
             border: $borderBlack;
+            
+            .contact
+            {
+                width:$contactWidth;
+                height: $contactHeight;
+                border: $borderBlack;
+            }
+
             
             .logo
             {
@@ -50,9 +72,16 @@ $navWidth: 600px;
                 float: right;
                 border: $borderBlack;
             }
+            
+            .subMenu
+            {
+                width: $subMenuWidth;   
+                height: $subMenuHeight;
+                float: left;
+                border: $borderBlack;
+            }
         }
     }
-}
 
 @import 'navMenu'
 

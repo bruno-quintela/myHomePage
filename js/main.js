@@ -1,11 +1,24 @@
 $(document).ready(function () {
-    initUI();
+    //initUI();
+    initComponents();
+    //initListeners();
 });
 
 function initUI() {
     setElemScreenHeight('.mainWrapper');
 }
 
+function initComponents() {
+}
+
+function initListeners() {
+    /* On Window resize event */
+    $(window).resize(function() {
+         setElemScreenHeight('.mainWrapper');
+    });
+}
+
 function setElemScreenHeight(elemRef) {
-    $(elemRef).css('height', $(document).height());
+    $height = $(window).height();
+    $(elemRef).height($height);
 }
