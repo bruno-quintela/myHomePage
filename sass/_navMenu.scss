@@ -1,7 +1,6 @@
 /** NAV MENU  **/
 
 /*li width*/
-$liHeight: 100px;
 $liWidth: 100px;
 
 nav {
@@ -9,20 +8,21 @@ nav {
     margin: 0;
     padding: 0;
     list-style: none;
+    display: table;
   }
 
   li { 
-      display: inline-block;
+      display:table-cell;
       width: $liWidth;
-      height: $liHeight;
-      vertical-align: baseline; 
+      height: $navHeight;
+      vertical-align: middle; 
       text-align: center; 
       border: $borderBlack; 
   }
 
   a {
     display: block;
-    padding: 6px 12px;
+    text-transform:uppercase;
     text-decoration: none;
   }
 }

@@ -1,7 +1,16 @@
+@import 'typography';
+
+body
+{
+    overflow: hidden;
+}
+
 /*Util macros*/
 $borderBlack: 1px solid #000;
 
+
 /************************** LAYOUT ************************************/
+
 
 /*MAIN WRAPPER*/
 $wrapperWidth:100%;
@@ -10,19 +19,21 @@ $wrapperHeight:1000px;
 /*GENERIC CONTAINER*/
 $containerWidth: 90%;
 $containerHeight: 100%;
-$containerMinWidth: 800px;
 
 /*HEADER WRAPPER*/
-$headerHeight: 100px;
 
-$contactWidth: 100%;
+$contactWidth: 90%;
 $contactHeight: 20px;
 
 $logoWidth: 200px;
-$navWidth: 600px;
+$navWidth: 400px;
+$navHeight: 50px;
 
-$subMenuWidth: 100%;
+$subMenuWidth: 90%;
 $subMenuHeight: 20px;
+
+
+$containerMinWidth: $logoWidth + $navWidth;
 
 
 .mainWrapper {
@@ -34,50 +45,83 @@ $subMenuHeight: 20px;
 .headerWrapper
     {
         width: $wrapperWidth;
-        height: $headerHeight;
+        height: auto;
         border: $borderBlack;
         text-align: center;
         position: fixed;
         top:0px;
         left:0px;
         
+        .contactWrapper
+        {
+            width:$wrapperWidth;
+            border: $borderBlack;
+            float:left;
+            .contact
+            {
+                width: $contactWidth;
+                min-width: $containerMinWidth;
+                height: $contactHeight;
+                margin: auto;
+                border: $borderBlack;
+            }
+        }
+        
         .headerContainer
         {
             margin: auto;
             width: $containerWidth;
             min-width: $containerMinWidth;
-            height: $headerHeight;
+            height: auto;
             border: $borderBlack;
-            
-            .contact
-            {
-                width:$contactWidth;
-                height: $contactHeight;
-                border: $borderBlack;
-            }
-
             
             .logo
             {
                 width: $logoWidth;
-                height: $headerHeight;
+                height: $navHeight;
                 float: left;
+                display: table;
+                 
                 border: $borderBlack;
+                .logoImg
+                {
+                    width:50px;
+                    height: $navHeight;
+                    display: table-cell;
+                    border: $borderBlack;
+                    float:left;
+                }
+                .logoText
+                {
+                    width:auto;
+                    height: $navHeight;
+                    display: table-cell;
+                    vertical-align: middle;
+                    text-align: center;
+                    border: $borderBlack;
+                    float: right;
+                }
             }
             
             .navMenu
             {
-                width: $navWidth;
-                height: $headerHeight;
+                width: auto;
+                height: $navHeight;
                 float: right;
                 border: $borderBlack;
             }
-            
+        }
+        .subMenuWrapper
+        {
+            width: $wrapperWidth;
+            border: $borderBlack;
+            float:left;
             .subMenu
             {
-                width: $subMenuWidth;   
+                width: $subMenuWidth;
+                min-width: $containerMinWidth;
                 height: $subMenuHeight;
-                float: left;
+                margin: auto;
                 border: $borderBlack;
             }
         }

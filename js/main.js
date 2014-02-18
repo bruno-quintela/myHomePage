@@ -1,7 +1,7 @@
 $(document).ready(function () {
-    //initUI();
+    initUI();
     initComponents();
-    //initListeners();
+    initListeners();
 });
 
 function initUI() {
