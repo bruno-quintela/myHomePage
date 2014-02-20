@@ -1,6 +1,46 @@
+@import url(http://fonts.googleapis.com/css?family=Lato|Lato:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light|Oswald:400,300,700);
+
 body
 {
-    font-family: 'Lato', serif;
+    font-family: 'Oswald', serif;
     letter-spacing: 1px;
-    font-size: 12px;
+    font-weight: 400;
+    font-size: 11px;
+    color: #ebe9e6;
+    text-shadow: 0 0 1px #000;
 }
+
+h1 {
+	font-size: 250px;
+	text-transform: uppercase;
+	position: relative;
+	letter-spacing: -2px;
+	text-align: left;
+	line-height: 0.8;
+	margin-bottom: 35px;
+	padding-top: 15px;
+}
+h1 span{
+	color: #7b133c;
+	font-size: 150px;
+}
+
+h2 {
+	font-size: 44px;
+	text-transform: uppercase;
+	position: relative;
+}
+h2.white { color: #222;}
+
+h3 {font-size: 22px; line-height: 1; color: #555;}
+
+.smallest {font-size: 26px; font-weight:300;}
+.smallestBold {font-size: 26px; font-weight:700;}
+.small {font-size: 36px; font-weight:300;}
+.smallBold {font-size: 36px; font-weight:700;}
+.medium {font-size: 44px; text-transform: uppercase;}
+.mediumBold {font-size: 44px; font-weight:700; text-transform: uppercase;}
+.large {font-size: 56px; text-transform: uppercase;}
+.largeBold {font-size: 56px; font-weight:700; text-transform: uppercase;}
+.author {font-size: 18px; font-weight:300;}

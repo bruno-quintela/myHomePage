@@ -3,10 +3,14 @@
 body
 {
     overflow: hidden;
+    background-color: #FFFFFF;
+    margin:0; 
+    padding-bottom: 0;
+
 }
 
 /*Util macros*/
-$borderBlack: 1px solid #000;
+$borderBlack: 1px solid #fff;
 
 
 /************************** LAYOUT ************************************/
@@ -39,7 +43,7 @@ $containerMinWidth: $logoWidth + $navWidth;
 .mainWrapper {
     width: $wrapperWidth;
     height: $wrapperHeight;
-    border: $borderBlack;
+    background-color: #313740;
 }
 
 .headerWrapper
@@ -51,6 +55,7 @@ $containerMinWidth: $logoWidth + $navWidth;
         position: fixed;
         top:0px;
         left:0px;
+        display: none;
         
         .contactWrapper
         {
@@ -127,5 +132,6 @@ $containerMinWidth: $logoWidth + $navWidth;
         }
     }
 
-@import 'navMenu'
+@import 'navMenu';
+@import 'slide0';
 

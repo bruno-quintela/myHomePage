@@ -1,0 +1,39 @@
+.slide0 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.innerSlide0 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 80%;
+    height: 70%;
+    margin: auto;
+    .title {
+        text-align: left;
+        height: 80px;
+    }
+    .content {
+        width: 100%;
+        height: 500px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        border: solid 50px rgba(255, 255, 255, .9);
+    }
+    
+    .title
+    {
+        text-align: left;
+        letter-spacing: 10px;
+    }
+
+    .bottom
+    {
+        text-align: right;
+        letter-spacing: 10px;
+    }
+}
